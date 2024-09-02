@@ -26,13 +26,13 @@ Para configurar Angular CLI version 18.1.0. y ejecutar el proyecto localmente, s
 - Clona el Repositorio:<br>
 bash<br>
 Copiar código<br>
-git clone <https://github.com/Aubar48/xAcademyProyect><br>
+git clone <https://github.com/Aubar48/xAcademyProyect> <br>
 Instala las Dependencias<br>
 
 - Dirigite a la carpeta del repositorio:<br>
 bash<br>
 Copiar código<br>
-cd <xAcademyProyect><br>
+cd <xAcademyProyect> <br>
 npm install<br>
 Ejecuta el Proyecto<br><br>
 
