@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, Inject, PLATFORM_ID, OnDestroy } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { ThemeService } from '../theme.service';
+import { ThemeService } from '../../services/theme.service';
 
 /**
  * Componente HeaderComponent

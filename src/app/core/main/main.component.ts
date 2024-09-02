@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ThemeService } from '../theme.service';
+import { ThemeService } from '../../services/theme.service';
 
 /**
  * Componente principal de la aplicación.

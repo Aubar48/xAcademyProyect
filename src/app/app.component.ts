@@ -1,10 +1,10 @@
 import { Component, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
-import { MainComponent } from './main/main.component';
-import { ThemeService } from './theme.service'; // Importa el servicio
+import { FooterComponent } from './core/footer/footer.component';
+import { HeaderComponent } from './core/header/header.component';
+import { MainComponent } from './core/main/main.component';
+import { ThemeService } from './services/theme.service'; // Importa el servicio
 
 @Component({
   selector: 'app-root',
