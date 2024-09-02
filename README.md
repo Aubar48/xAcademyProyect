@@ -4,13 +4,13 @@ Este proyecto es una landing page moderna diseñada para presentar servicios, de
 
 Web Online in netlify.app: https://sweet-semifreddo-c4a0aa.netlify.app/
 <figure><img src="./public/landing_page.png" alt="logo" style="height: 400px;"></figure>
-
 <br>
 Tecnologías Utilizadas:
 - Angular: Framework para construir la interfaz de usuario.<br>
 - CSS/SCSS: Para el estilo y diseño de la página.<br>
 - Material Icons: Para íconos de la interfaz.<br>
-- Google Fonts: Fuentes utilizadas para mejorar la apariencia del texto.<br>
+- Google Fonts: Fuentes utilizadas para mejorar la apariencia del texto.
+<br>
 
 La estructura del proyecto incluye los siguientes componentes:<br>
 - header.component.html: Contiene el encabezado de la página con el logo, el menú de navegación y los botones.<br>
@@ -20,23 +20,24 @@ La estructura del proyecto incluye los siguientes componentes:<br>
 - theme.service.ts: Servicio para manejar el modo oscuro/claro y el almacenamiento en localStorage.
 <br>
 
-Para configurar Angular CLI version 18.1.0. y ejecutar el proyecto localmente, sigue estos pasos:<br>
+Para configurar Angular CLI version 18.1.0. y ejecutar el proyecto localmente, sigue estos pasos:
+<br>
 
-- Clona el Repositorio:
-bash
-Copiar código
-git clone <https://github.com/Aubar48/xAcademyProyect>
+- Clona el Repositorio:<br>
+bash<br>
+Copiar código<br>
+git clone <https://github.com/Aubar48/xAcademyProyect><br>
 Instala las Dependencias<br>
 
-- Dirigite a la carpeta del repositorio:
-bash
-Copiar código
-cd <xAcademyProyect>
-npm install
-Ejecuta el Proyecto<br>
+- Dirigite a la carpeta del repositorio:<br>
+bash<br>
+Copiar código<br>
+cd <xAcademyProyect><br>
+npm install<br>
+Ejecuta el Proyecto<br><br>
 
-- Levanta el servidor del repositorio:
-bash
-Copiar código
-ng serve
+- Levanta el servidor del repositorio:<br>
+bash<br>
+Copiar código<br>
+ng serve<br>
 Accede a la Aplicación Abre tu navegador y ve a http://localhost:4200.<br>
