@@ -32,7 +32,7 @@ Instala las Dependencias<br>
 - Dirigite a la carpeta del repositorio:<br>
 bash<br>
 Copiar código<br>
-cd <xAcademyProyect> <br>
+cd xAcademyProyect <br>
 npm install<br>
 Ejecuta el Proyecto<br><br>
 
