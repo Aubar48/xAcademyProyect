@@ -1,0 +1,34 @@
+<!-- header.component.html -->
+<header>
+    <div class="logo">
+        <i class="material-icons">health_and_safety</i>Shades
+    </div>
+    <nav class="menu">
+        <ul>
+            <li>Free Landing Pages</li>
+            <li>Features</li>
+            <li>Services</li>
+            <li>Pricing</li>
+            <li>Contact</li>
+            <label class="switch">
+                <input type="checkbox" id="modo-desktop">
+                <span class="slider"></span>
+            </label>
+        </ul>
+    </nav>
+    <button type="button" class="outline-button">Get started</button>
+    <button class="hamburger-menu" (click)="toggleMenu()">☰</button>
+</header>
+<nav class="mobile-menu">
+    <ul>
+        <li>Free Landing Pages</li>
+        <li>Features</li>
+        <li>Services</li>
+        <li>Pricing</li>
+        <li>Contact</li>
+        <label class="switch">
+            <input type="checkbox" id="modo-mobile">
+            <span class="slider"></span>
+        </label>
+    </ul>
+</nav>
