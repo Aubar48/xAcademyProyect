@@ -20,14 +20,14 @@ Google Fonts: Fuentes utilizadas para mejorar la apariencia del texto.
 Estructura del Proyecto
 La estructura del proyecto incluye los siguientes componentes:
 
-header.component.html: Contiene el encabezado de la página con el logo, el menú de navegación y los botones.
-main.component.html: La sección principal que presenta el servicio, las características y los elementos visuales.
-footer.component.html: El pie de página con la información de derechos reservados y la fecha y hora actual.
-app.component.html: Contiene los componentes Header, Main, y Footer dentro de un contenedor principal.
-theme.service.ts: Servicio para manejar el modo oscuro/claro y el almacenamiento en localStorage.
-header.component.ts: Lógica para inicializar el modo y manejar el menú hamburguesa.
-main.component.ts: Inicializa el modo de tema al cargar.
-footer.component.ts: Actualiza la fecha y hora y aplica el tema.
+- header.component.html: Contiene el encabezado de la página con el logo, el menú de navegación y los botones.
+- main.component.html: La sección principal que presenta el servicio, las características y los elementos visuales.
+- footer.component.html: El pie de página con la información de derechos reservados y la fecha y hora actual.
+- app.component.html: Contiene los componentes Header, Main, y Footer dentro de un contenedor principal.
+- theme.service.ts: Servicio para manejar el modo oscuro/claro y el almacenamiento en localStorage.
+- header.component.ts: Lógica para inicializar el modo y manejar el menú hamburguesa.
+- main.component.ts: Inicializa el modo de tema al cargar.
+- footer.component.ts: Actualiza la fecha y hora y aplica el tema.
 <br>
 Configuración
 Para configurar y ejecutar el proyecto localmente, sigue estos pasos:
