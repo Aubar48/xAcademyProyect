@@ -21,9 +21,6 @@ body.noche .logo {
   color: #2e86fd;
 }
 
-body.noche .logo i {
-  color: #fa593c;
-}
 
 .menu {
   flex-grow: 2;
@@ -31,9 +28,6 @@ body.noche .logo i {
   margin-left: 70px;
 }
 
-body.noche .menu {
-  color: #f5f5f5;
-}
 
 .menu ul {
   list-style-type: none;
@@ -47,9 +41,6 @@ body.noche .menu {
   text-transform: capitalize;
 }
 
-body.noche .menu ul li {
-  color: #f5f5f5;
-}
 
 .outline-button {
   padding: 10px 15px;
@@ -60,10 +51,6 @@ body.noche .menu ul li {
   cursor: pointer;
 }
 
-body.noche .outline-button {
-  border-color: #fa593c;
-  color: #fa593c;
-}
 
 /* Estilos específicos para el menú hamburguesa y menú móvil */
 .hamburger-menu {
@@ -75,9 +62,6 @@ body.noche .outline-button {
   cursor: pointer;
 }
 
-body.noche .hamburger-menu {
-  color: #f5f5f5;
-}
 
 .mobile-menu {
   display: none;
@@ -97,9 +81,6 @@ body.noche .hamburger-menu {
   text-transform: capitalize;
 }
 
-body.noche .mobile-menu ul li {
-  color: #f5f5f5;
-}
 
 /* Estilos para el interruptor */
 .switch {

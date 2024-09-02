@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { ThemeService } from '../theme.service';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +11,10 @@ import { isPlatformBrowser } from '@angular/common';
 export class HeaderComponent implements AfterViewInit {
   private platformId: Object;
 
-  constructor(@Inject(PLATFORM_ID) platformId: Object) {
+  constructor(
+    @Inject(PLATFORM_ID) platformId: Object,
+    private themeService: ThemeService
+  ) {
     this.platformId = platformId;
   }
 
@@ -21,39 +25,23 @@ export class HeaderComponent implements AfterViewInit {
   }
 
   initModo() {
-    const body = document.querySelector('body');
+    this.themeService.initModo();
     const switches = document.querySelectorAll('.switch input[type="checkbox"]');
-
+    
     switches.forEach(switchElement => {
       if (switchElement instanceof HTMLInputElement) {
-        switchElement.checked = localStorage.getItem('modo') === 'noche';
+        switchElement.checked = this.themeService.getModoActual() === 'noche';
         switchElement.addEventListener('change', () => this.cambiarModo());
       }
     });
-
-    if (localStorage.getItem('modo') === 'noche' && body) {
-      body.classList.add('noche');
-    } else if (body) {
-      body.classList.remove('noche');
-    }
   }
 
   cambiarModo() {
-    const body = document.querySelector('body');
-    const modoActual = localStorage.getItem('modo');
-
-    if (modoActual === 'dia' && body) {
-      body.classList.add('noche');
-      localStorage.setItem('modo', 'noche');
-    } else if (body) {
-      body.classList.remove('noche');
-      localStorage.setItem('modo', 'dia');
-    }
-
+    this.themeService.cambiarModo();
     const switches = document.querySelectorAll('.switch input[type="checkbox"]');
     switches.forEach(switchElement => {
       if (switchElement instanceof HTMLInputElement) {
-        switchElement.checked = localStorage.getItem('modo') === 'noche';
+        switchElement.checked = this.themeService.getModoActual() === 'noche';
       }
     });
   }

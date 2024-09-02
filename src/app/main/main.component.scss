@@ -12,10 +12,6 @@
     font-weight: 700;
   }
   
-  body.noche .pre-title {
-    color: #cccccc;
-  }
-  
   .presentation h1 {
     color: #343f44;
     font-size: 60px;
@@ -47,12 +43,7 @@
     }
   }
   
-  
-  body.noche .presentation h1 {
-    color: #f5f5f5;
-    border-right-color: #fa593c; /* Efecto de cursor */
-  }
-  
+
   .post-title {
     color: #6f7880;
     font-size: 20px;
@@ -60,10 +51,6 @@
     padding: 0 50px;
     margin-bottom: 30px;
     display: block;
-  }
-  
-  body.noche .post-title {
-    color: #cccccc;
   }
   
   .subscribe-form input {
@@ -90,19 +77,13 @@
     cursor: pointer;
   }
   
-  body.noche .subscribe-form button {
-    background-color: #2e86fd;
-  }
-  
   .secondary-p {
     color: #a3a3a5;
     font-size: 12px;
     font-weight: 600;
   }
   
-  body.noche .secondary-p {
-    color: #cccccc;
-  }
+  
   /* Cards features */
   .features {
     display: flex;
@@ -121,9 +102,6 @@
     
   }
   
-  body.noche .feature{
-    background-color: #333333;
-  }
   .feature-button {
     padding: 10px 15px;
     background-color: transparent;
@@ -136,38 +114,22 @@
     
   }
   
-  
-  body.noche .feature-button {
-    border-color: #fa593c;
-    color: #fa593c;
-    
-    
-  }
+
   
   .feature h4 {
     margin: 0;
     font-size: 20px;
   }
-  
-  body.noche .feature h4 {
-    color: #f5f5f5;
-  }
+ 
   
   .feature p {
     font-size: 16px;
   }
   
-  body.noche .feature p {
-    color: #cccccc;
-  }
   
   .feature i {
     font-size: 50px;
     color: #2e86fd;
-  }
-  
-  body.noche .feature i {
-    color: #fa593c;
   }
   
   .img-tec {
