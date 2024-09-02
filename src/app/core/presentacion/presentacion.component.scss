@@ -1,0 +1,123 @@
+/* Estilo para la sección de presentación */
+.presentation {
+    margin-top: 50px; /* Espacio superior de 50px */
+    display: flex; /* Usar flexbox para el diseño */
+    flex-direction: column; /* Colocar los elementos en una columna */
+    align-items: center; /* Centrar los elementos horizontalmente */
+  }
+  
+  /* Estilo para el título previo a la sección de presentación */
+  .pre-title {
+    color: #6f7880; /* Color del texto */
+    text-transform: uppercase; /* Transformar el texto a mayúsculas */
+    font-size: 25px; /* Tamaño de fuente */
+    font-weight: 700; /* Peso de fuente en negrita */
+  }
+  
+  /* Estilo para el título principal en la sección de presentación */
+  .presentation h1 {
+    color: #343f44; /* Color del texto */
+    font-size: 60px; /* Tamaño de fuente */
+    margin-top: 35px; /* Espacio superior */
+    margin-bottom: 35px; /* Espacio inferior */
+    overflow: hidden; /* Ocultar el desbordamiento de texto */
+    white-space: nowrap; /* No permitir el salto de línea */
+    border-right: 0.15em solid #2e86fd; /* Borde derecho para efecto de cursor */
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; /* Animaciones de escritura y parpadeo del cursor */
+  }
+  
+  /* Animación de escritura */
+  @keyframes typing {
+    from {
+        width: 0; /* Comienza con ancho 0 */
+    }
+    to {
+        width: 50%; /* Ancho final del 50% */
+    }
+  }
+  
+  /* Animación de parpadeo del cursor */
+  @keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent; /* Cursor invisible al inicio y al final */
+    }
+    50% {
+        border-color: #fa593c; /* Cursor visible a la mitad del tiempo */
+    }
+  }
+  
+  /* Estilo para el título posterior */
+  .post-title {
+    color: #6f7880; /* Color del texto */
+    font-size: 20px; /* Tamaño de fuente */
+    font-weight: 600; /* Peso de fuente semi-negrita */
+    padding: 0 50px; /* Espaciado horizontal */
+    margin-bottom: 30px; /* Espacio inferior */
+    display: block; /* Mostrar como bloque */
+  }
+  
+  /* Estilo para el campo de entrada del formulario de suscripción */
+  .subscribe-form input {
+    width: 50%; /* Ancho del 50% del contenedor padre */
+    height: 40px; /* Altura del campo de entrada */
+    border: none; /* Sin borde */
+    padding-right: 30px; /* Espaciado interno a la derecha */
+    padding-left: 30px; /* Espaciado interno a la izquierda */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: 700; /* Peso de fuente en negrita */
+    color: #a3a3a5; /* Color del texto */
+  }
+  
+  /* Estilo para el botón del formulario de suscripción */
+  .subscribe-form button {
+    width: 30%; /* Ancho del 30% del contenedor padre */
+    height: 42px; /* Altura del botón */
+    border: none; /* Sin borde */
+    background-color: #fa593c; /* Color de fondo */
+    color: white; /* Color del texto */
+    font-size: 15px; /* Tamaño de fuente */
+    font-weight: 700; /* Peso de fuente en negrita */
+    cursor: pointer; /* Cambiar el cursor a mano al pasar sobre el botón */
+  }
+  
+  /* Estilo para los párrafos secundarios */
+  .secondary-p {
+    color: #a3a3a5; /* Color del texto */
+    font-size: 12px; /* Tamaño de fuente */
+    font-weight: 600; /* Peso de fuente semi-negrita */
+  }
+  
+
+  
+/* Estilos para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
+    .pre-title {
+        font-size: 35px; /* Reducir tamaño de fuente para pantallas pequeñas */
+    }
+  
+    .presentation h1 {
+        font-size: 18px; /* Reducir tamaño de fuente */
+        margin-top: 20px; /* Reducir espacio superior */
+        margin-bottom: 20px; /* Reducir espacio inferior */
+    }
+  
+    .post-title {
+        font-size: 18px; /* Reducir tamaño de fuente */
+    }
+    
+  
+    .subscribe-form input,
+    .subscribe-form button {
+        width: 35%; /* Reducir ancho de campo y botón */
+    }
+}
+  
+  /* Estilos para pantallas medianas (tablets) */
+  @media only screen and (min-width: 600px) and (max-width: 992px) {
+    .presentation h1 {
+        font-size: 40px; /* Ajustar tamaño de fuente */
+    }
+  
+  }
+  

@@ -1,0 +1,23 @@
+
+/* Estilo para la sección de imágenes tecnológicas */
+.img-tec {
+    display: flex; /* Usar flexbox para el diseño */
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    gap: 40px; /* Espacio entre las imágenes */
+    margin-top: 50px; /* Espacio superior */
+  }
+  
+  /* Estilo para la imagen con sombreado */
+  .img-tec-2 {
+    filter: drop-shadow(20px 7px 5px #4E4061); /* Aplicar sombra a la imagen */
+  }
+
+  
+/* Estilos para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
+    .img-tec img {
+        width: 120px; /* Reducir ancho de las imágenes */
+        height: auto; /* Ajustar altura automáticamente */
+    }
+  }
+  
