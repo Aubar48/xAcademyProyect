@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ThemeService } from '../../services/theme.service';
-import { PresentacionComponent } from '../presentacion/presentacion.component';
-import { ImgTecComponent } from '../img-tec/img-tec.component';
-import { FeatureComponent } from '../feature/feature.component';
+import { PresentacionComponent } from './presentacion/presentacion.component';
+import { FeatureComponent } from './feature/feature.component';
 
 /**
  * Componente principal de la aplicación.
@@ -11,8 +10,7 @@ import { FeatureComponent } from '../feature/feature.component';
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [PresentacionComponent,ImgTecComponent,FeatureComponent],
-
+  imports: [PresentacionComponent,FeatureComponent],
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })

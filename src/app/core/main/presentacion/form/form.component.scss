@@ -1,0 +1,25 @@
+
+  /* Estilo para el campo de entrada del formulario de suscripción */
+  .subscribe-form input {
+    width: 50%; /* Ancho del 50% del contenedor padre */
+    height: 40px; /* Altura del campo de entrada */
+    border: none; /* Sin borde */
+    padding-right: 30px; /* Espaciado interno a la derecha */
+    padding-left: 30px; /* Espaciado interno a la izquierda */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: 700; /* Peso de fuente en negrita */
+    color: #a3a3a5; /* Color del texto */
+  }
+  
+  /* Estilo para el botón del formulario de suscripción */
+  .subscribe-form button {
+    width: 30%; /* Ancho del 30% del contenedor padre */
+    height: 42px; /* Altura del botón */
+    border: none; /* Sin borde */
+    background-color: #fa593c; /* Color de fondo */
+    color: white; /* Color del texto */
+    font-size: 15px; /* Tamaño de fuente */
+    font-weight: 700; /* Peso de fuente en negrita */
+    cursor: pointer; /* Cambiar el cursor a mano al pasar sobre el botón */
+  }
+  
