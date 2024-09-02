@@ -1,155 +1,166 @@
-/* header.component.scss */
+/* Estilos para el contenedor del header */
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: flex; /* Usar flexbox para el diseño del header */
+  align-items: center; /* Alinear verticalmente los elementos al centro */
+  justify-content: space-between; /* Distribuir los elementos con espacio entre ellos */
 }
 
+/* Estilo para el logo en el header */
 .logo {
-  display: flex;
-  align-items: center;
-  color: #343f44;
-  font-size: 25px;
+  display: flex; /* Usar flexbox para el diseño del logo */
+  align-items: center; /* Alinear verticalmente el contenido del logo */
+  color: #343f44; /* Color del texto del logo */
+  font-size: 25px; /* Tamaño de fuente del logo */
 }
 
+/* Cambiar el color del logo cuando el cuerpo tiene la clase 'noche' */
 body.noche .logo {
-  color: #f5f5f5;
+  color: #f5f5f5; /* Color del texto en modo oscuro */
 }
 
+/* Estilo para el icono dentro del logo */
 .logo i {
-  font-size: 35px;
-  color: #2e86fd;
+  font-size: 35px; /* Tamaño de fuente del icono */
+  color: #2e86fd; /* Color del icono */
 }
 
-
+/* Estilo para el menú de navegación */
 .menu {
-  flex-grow: 2;
-  color: #343f44;
-  margin-left: 70px;
+  flex-grow: 2; /* Permitir que el menú crezca para llenar el espacio disponible */
+  color: #343f44; /* Color del texto del menú */
+  margin-left: 70px; /* Espacio a la izquierda del menú */
 }
 
-
+/* Estilos para la lista dentro del menú */
 .menu ul {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
+  list-style-type: none; /* Quitar los puntos de la lista */
+  display: flex; /* Usar flexbox para alinear los elementos de la lista horizontalmente */
+  align-items: center; /* Alinear verticalmente los elementos de la lista */
 }
 
+/* Estilos para cada elemento de la lista en el menú */
 .menu ul li {
-  margin-right: 30px;
-  font-weight: 600;
-  text-transform: capitalize;
+  margin-right: 30px; /* Espacio a la derecha de cada elemento de la lista */
+  font-weight: 600; /* Peso de fuente semi-negrita */
+  text-transform: capitalize; /* Capitalizar la primera letra de cada palabra */
 }
 
-
+/* Estilo para los botones con borde */
 .outline-button {
-  padding: 10px 15px;
-  background-color: transparent;
-  border: 2px solid #2e86fd;
-  color: #2e86fd;
-  font-weight: bold;
-  cursor: pointer;
+  padding: 10px 15px; /* Espaciado interno del botón */
+  background-color: transparent; /* Fondo transparente */
+  border: 2px solid #2e86fd; /* Borde del botón */
+  color: #2e86fd; /* Color del texto del botón */
+  font-weight: bold; /* Peso de fuente en negrita */
+  cursor: pointer; /* Cambiar el cursor a mano al pasar sobre el botón */
 }
-
 
 /* Estilos específicos para el menú hamburguesa y menú móvil */
 .hamburger-menu {
-  display: none;
-  font-size: 30px;
-  background: none;
-  border: none;
-  color: #343f44;
-  cursor: pointer;
+  display: none; /* Ocultar el menú hamburguesa por defecto */
+  font-size: 30px; /* Tamaño de fuente del icono del menú hamburguesa */
+  background: none; /* Sin fondo */
+  border: none; /* Sin borde */
+  color: #343f44; /* Color del icono del menú hamburguesa */
+  cursor: pointer; /* Cambiar el cursor a mano al pasar sobre el icono */
 }
 
-
+/* Estilo para el menú móvil */
 .mobile-menu {
-  display: none;
-  flex-direction: column;
-  background-color: #bddbf8;
-  padding: 10px;
+  display: none; /* Ocultar el menú móvil por defecto */
+  flex-direction: column; /* Colocar los elementos en una columna */
+  background-color: #bddbf8; /* Color de fondo del menú móvil */
+  padding: 10px; /* Espaciado interno del menú móvil */
 }
 
+/* Estilos para la lista dentro del menú móvil */
 .mobile-menu ul {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: none; /* Quitar los puntos de la lista */
+  padding: 0; /* Eliminar el espaciado interno de la lista */
 }
 
+/* Estilos para cada elemento de la lista en el menú móvil */
 .mobile-menu ul li {
-  margin-bottom: 10px;
-  font-weight: 600;
-  text-transform: capitalize;
+  margin-bottom: 10px; /* Espacio inferior de cada elemento de la lista */
+  font-weight: 600; /* Peso de fuente semi-negrita */
+  text-transform: capitalize; /* Capitalizar la primera letra de cada palabra */
 }
 
-
-/* Estilos para el interruptor */
+/* Estilos para el interruptor (switch) */
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 24px;
-  height: 18px;
+  position: relative; /* Posición relativa para el interruptor */
+  display: inline-block; /* Mostrar en línea y como bloque */
+  width: 24px; /* Ancho del interruptor */
+  height: 18px; /* Altura del interruptor */
 }
 
+/* Estilo para el input del interruptor (oculto) */
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+  opacity: 0; /* Hacer el input invisible */
+  width: 0; /* Ancho del input (cero) */
+  height: 0; /* Altura del input (cero) */
 }
 
+/* Estilo para el slider del interruptor */
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #2e86fd;
-  border-radius: 24px;
-  transition: background-color 0.4s ease;
+  position: absolute; /* Posición absoluta para el slider */
+  cursor: pointer; /* Cambiar el cursor a mano al pasar sobre el slider */
+  top: 0; /* Posición superior */
+  left: 0; /* Posición izquierda */
+  right: 0; /* Posición derecha */
+  bottom: 0; /* Posición inferior */
+  background-color: #2e86fd; /* Color de fondo del slider */
+  border-radius: 24px; /* Bordes redondeados del slider */
+  transition: background-color 0.4s ease; /* Transición suave para el cambio de color de fondo */
 }
 
+/* Estilo para el círculo dentro del slider */
 .slider::before {
-  position: absolute;
-  content: "";
-  height: 12px;
-  width: 12px;
-  left: 2px;
-  bottom: 3px;
-  border-radius: 50%;
-  background-color: #fff;
-  transition: transform 0.4s ease;
+  position: absolute; /* Posición absoluta para el círculo */
+  content: ""; /* Sin contenido */
+  height: 12px; /* Altura del círculo */
+  width: 12px; /* Ancho del círculo */
+  left: 2px; /* Posición izquierda del círculo */
+  bottom: 3px; /* Posición inferior del círculo */
+  border-radius: 50%; /* Bordes redondeados del círculo */
+  background-color: #fff; /* Color de fondo del círculo */
+  transition: transform 0.4s ease; /* Transición suave para el movimiento del círculo */
 }
 
+/* Estilo para el slider cuando el input está marcado */
 input:checked + .slider {
-  background-color: #fa593c;
+  background-color: #fa593c; /* Cambiar color de fondo del slider */
 }
 
+/* Estilo para el slider cuando el input está enfocado */
 input:focus + .slider {
-  box-shadow: 0 0 10px #4E4061;
+  box-shadow: 0 0 10px #4E4061; /* Agregar sombra alrededor del slider */
 }
 
+/* Estilo para el círculo dentro del slider cuando el input está marcado */
 input:checked + .slider::before {
-  transform: translateX(8px);
+  transform: translateX(8px); /* Mover el círculo a la derecha */
 }
 
+/* Estilos específicos para pantallas pequeñas (móviles) */
 @media only screen and (max-width: 600px) {
   .menu {
-    display: none; /* Ocultar el menú original */
+    display: none; /* Ocultar el menú original en pantallas pequeñas */
   }
   .hamburger-menu {
-    display: block;
+    display: block; /* Mostrar el menú hamburguesa en pantallas pequeñas */
   }
   .mobile-menu {
-    display: none; /* Ocultar por defecto */
+    display: none; /* Ocultar el menú móvil por defecto */
   }
 }
 
-/* Para pantallas medianas (tablets) */
+/* Estilos para pantallas medianas (tablets) */
 @media only screen and (min-width: 600px) and (max-width: 992px) {
   .menu {
-    display: none; /* Ocultar el menú original */
+    display: none; /* Ocultar el menú original en pantallas medianas */
   }
   .hamburger-menu {
-    display: block;
+    display: block; /* Mostrar el menú hamburguesa en pantallas medianas */
   }
 }
