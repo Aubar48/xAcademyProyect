@@ -1,47 +1,17 @@
 <!-- Sección de características -->
 <section class="features">
-    <!-- Primera característica -->
-    <div class="feature">
-      <!-- Icono de la característica -->
-      <div class="feature-icon"><i class="material-icons">add_box</i></div>
-      <!-- Contenido de la característica -->
-      <div>
-        <!-- Título de la característica -->
-        <h4>Easy to Use</h4>
-        <!-- Descripción de la característica -->
-        <p>Editing and customizing Essential Landing is easy and fast</p>
-        <!-- Botón para obtener más información -->
-        <button type="button" class="feature-button">More Info →</button>
-      </div>
+  <!-- Iterar sobre las características usando *ngFor -->
+  <div class="feature" *ngFor="let feature of features">
+    <!-- Icono de la característica -->
+    <div class="feature-icon"><i class="material-icons">{{ feature.icon }}</i></div>
+    <!-- Contenido de la característica -->
+    <div>
+      <!-- Título de la característica -->
+      <h4>{{ feature.title }}</h4>
+      <!-- Descripción de la característica -->
+      <p>{{ feature.description }}</p>
+      <!-- Botón para obtener más información -->
+      <button type="button" class="feature-button">More Info →</button>
     </div>
-    
-    <!-- Segunda característica -->
-    <div class="feature">
-      <!-- Icono de la característica -->
-      <div class="feature-icon"><i class="material-icons">star_half</i></div>
-      <!-- Contenido de la característica -->
-      <div>
-        <!-- Título de la característica -->
-        <h4>100% Responsive</h4>
-        <!-- Descripción de la característica -->
-        <p>Editing and customizing Essential Landing is easy and fast</p>
-        <!-- Botón para obtener más información -->
-        <button type="button" class="feature-button">More Info →</button>
-      </div>
-    </div>
-    
-    <!-- Tercera característica -->
-    <div class="feature">
-      <!-- Icono de la característica -->
-      <div class="feature-icon"><i class="material-icons">system_update_alt</i></div>
-      <!-- Contenido de la característica -->
-      <div>
-        <!-- Título de la característica -->
-        <h4>50+ New pages</h4>
-        <!-- Descripción de la característica -->
-        <p>Editing and customizing Essential Landing is easy and fast</p>
-        <!-- Botón para obtener más información -->
-        <button type="button" class="feature-button">More Info →</button>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>

@@ -1,12 +1,8 @@
 <!-- Sección de imágenes tecnológicas -->
 <section class="img-tec">
-    <!-- Primera imagen tecnológica -->
-    <img class="img-tec-1"
-      src="https://technologywithpurpose.org/wp-content/uploads/2022/10/technology-with-purpose.svg"
-      alt="technology-withPurpose">
-    <!-- Segunda imagen tecnológica -->
-    <img class="img-tec-2"
-      src="https://technologywithpurpose.org/wp-content/uploads/2023/02/xacademy-white.svg"
-      alt="xAcademy">
-  </section>
-  
+  <!-- Iterar sobre las imágenes usando *ngFor -->
+  <img *ngFor="let img of images"
+       [ngClass]="img.class"
+       [src]="img.src"
+       [alt]="img.alt">
+</section>
