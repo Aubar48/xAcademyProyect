@@ -8,44 +8,13 @@
       Shades
     </div>
     
-    <!-- Navegación principal -->
-    <nav class="menu">
-      <ul>
-        <!-- Elementos de navegación -->
-        <li>Free Landing Pages</li>
-        <li>Features</li>
-        <li>Services</li>
-        <li>Pricing</li>
-        <li>Contact</li>
-        <!-- Interruptor para cambiar el modo (día/noche) -->
-        <label class="switch">
-          <input type="checkbox" id="modo-desktop">
-          <span class="slider"></span>
-        </label>
-      </ul>
-    </nav>
+    <app-menu-elemento [menuItems]="menuItems" ></app-menu-elemento>
     
     <!-- Botón para iniciar -->
     <button type="button" class="outline-button">Get started</button>
     
     <!-- Botón para abrir el menú hamburguesa en vista móvil -->
-    <button class="hamburger-menu" (click)="toggleMenu()">☰</button>
+    <button class="hamburger-menu" (click)="toggleMenu()">☰</button> 
   </header>
   
-  <!-- Menú de navegación específico para dispositivos móviles -->
-  <nav class="mobile-menu">
-    <ul>
-      <!-- Elementos de navegación para el menú móvil -->
-      <li>Free Landing Pages</li>
-      <li>Features</li>
-      <li>Services</li>
-      <li>Pricing</li>
-      <li>Contact</li>
-      <!-- Interruptor para cambiar el modo (día/noche) en vista móvil -->
-      <label class="switch">
-        <input type="checkbox" id="modo-mobile">
-        <span class="slider"></span>
-      </label>
-    </ul>
-  </nav>
-  
+ <app-burger-menu-elemento [burgerMenuItems]="burgerMenuItems" ></app-burger-menu-elemento>

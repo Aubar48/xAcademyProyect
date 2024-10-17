@@ -4,7 +4,9 @@ body {
   background-color: #bddbf8; /* Color de fondo predeterminado para el cuerpo */
   box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto del elemento */
 }
-
+a{
+  text-decoration: none;
+}
 
 /* Estilos para el modo nocturno (dark mode) */
 body.noche {

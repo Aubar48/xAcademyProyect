@@ -1,6 +1,8 @@
 import { AfterViewInit, Component, Inject, PLATFORM_ID, OnDestroy } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { ThemeService } from '../../services/theme.service';
+import { MenuElementoComponent } from "../header/menu-elemento/menu-elemento.component";
+import { BurgerMenuElementoComponent } from './burger-menu-elemento/burger-menu-elemento.component';
 
 /**
  * Componente HeaderComponent
@@ -14,6 +16,8 @@ import { ThemeService } from '../../services/theme.service';
   standalone: true, // Marca el componente como independiente para la carga
   templateUrl: './header.component.html', // Ruta al archivo de plantilla HTML del componente
   styleUrls: ['./header.component.scss'] // Ruta al archivo de estilos SCSS del componente
+  ,
+  imports: [MenuElementoComponent,BurgerMenuElementoComponent]
 })
 export class HeaderComponent implements AfterViewInit, OnDestroy {
   private platformId: Object; // Identificador de la plataforma actual
@@ -121,4 +125,21 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
       }
     }
   }
+/**Elementos del menu para desktop */
+  menuItems=[
+   {text:'Free Landing Pages', route:'/'},
+   {text:'Features', route: '/'},
+   {text:'Services', route:'/'},
+   {text:'Pricing', route:'/'},
+   {text:'Contact', route:'/'}
+  ]
+/**Elementos del menu para movile */
+  burgerMenuItems=[
+    {text:'Free Landing Pages', route:'/'},
+    {text:'Features', route: '/'},
+    {text:'Services', route:'/'},
+    {text:'Pricing', route:'/'},
+    {text:'Contact', route:'/'}
+   ]
+
 }
