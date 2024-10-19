@@ -2,7 +2,7 @@
     <ul *ngIf="menuItems">
       <!-- Elementos de navegación -->
       <li *ngFor="let menuItem of menuItems"> 
-        <a [href]="menuItem.route"> {{menuItem.text}} </a></li>
+        <a [routerLink]="menuItem.route" routerLinkActive="active"> {{menuItem.text}} </a></li>
       <!-- Interruptor para cambiar el modo (día/noche) -->
       <label class="switch">
         <input type="checkbox" id="modo-desktop">

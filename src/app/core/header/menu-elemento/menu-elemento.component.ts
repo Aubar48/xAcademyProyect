@@ -1,17 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { MenuItem } from '../../../model/menu-item.model';
 
 @Component({
   selector: 'app-menu-elemento',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,RouterLink,RouterLinkActive],
   templateUrl: './menu-elemento.component.html',
   styleUrl: './menu-elemento.component.scss'
 })
 export class MenuElementoComponent {
-  @Input() menuItems?:{
-    text:string,
-    route:string
-  }[];
+  @Input() menuItems?:MenuItem[];
 
 }

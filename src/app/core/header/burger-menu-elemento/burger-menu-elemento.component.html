@@ -3,7 +3,7 @@
     <ul *ngIf="burgerMenuItems">
       <!-- Elementos de navegación -->
       <li *ngFor="let burgerMenuItem of burgerMenuItems"> 
-        <a [href]="burgerMenuItem.route"> {{burgerMenuItem.text}} </a></li>
+        <a [routerLink]="burgerMenuItem.route" routerLinkActive="active"> {{burgerMenuItem.text}} </a></li>
       <!-- Interruptor para cambiar el modo (día/noche) en vista móvil -->
       <label class="switch">
         <input type="checkbox" id="modo-mobile">

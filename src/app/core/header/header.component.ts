@@ -3,6 +3,8 @@ import { isPlatformBrowser } from '@angular/common';
 import { ThemeService } from '../../services/theme.service';
 import { MenuElementoComponent } from "../header/menu-elemento/menu-elemento.component";
 import { BurgerMenuElementoComponent } from './burger-menu-elemento/burger-menu-elemento.component';
+import { MenuItem } from './../../model/menu-item.model';
+import { BurgerItem } from '../../model/burger-item.model';
 
 /**
  * Componente HeaderComponent
@@ -126,7 +128,7 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
     }
   }
 /**Elementos del menu para desktop */
-  menuItems=[
+  menuItems: MenuItem[] = [
    {text:'Free Landing Pages', route:'/home'},
    {text:'Features', route: '/features'},
    {text:'Services', route:'/services'},
@@ -134,12 +136,12 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
    {text:'Contact', route:'/contact'}
   ]
 /**Elementos del menu para movile */
-  burgerMenuItems=[
+  burgerMenuItems: BurgerItem[] = [
     {text:'Free Landing Pages', route:'/home'},
     {text:'Features', route: '/features'},
     {text:'Services', route:'/services'},
     {text:'Pricing', route:'/pricing'},
-    {text:'Contact', route:'/contact'}
+    {text:'Contact', route:'/contact'},
    ]
 
 }
