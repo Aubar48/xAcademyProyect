@@ -1,0 +1,57 @@
+/* Estilos generales para la página "not found" */
+.page-not-found {
+  min-height: 79.5vh; /* Altura mínima del contenedor */
+  display: flex; /* Flexbox para centrar contenido */
+  flex-direction: column; /* Coloca los hijos en una columna */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  gap: 1rem; /* Espacio entre los elementos */
+}
+
+/* Estilos para la imagen */
+.error-image {
+  border-radius: 0.5rem; /* Bordes redondeados */
+  height: calc(100vh - 200px); /* Adaptado según tu diseño (ajustable) */
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .page-not-found h2 {
+      font-size: 2rem; /* Tamaño de fuente más pequeño */
+  }
+
+  .error-image {
+      height: 50vh; /* Ajustar la altura de la imagen para móviles */
+      width: 90%; /* Limitar el ancho de la imagen */
+  }
+
+  .page-not-found {
+      gap: 0.5rem; /* Menor espacio entre elementos */
+  }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 601px) and (max-width: 900px) {
+ 
+
+  .error-image {
+      height: 60vh; /* Ajustar la altura de la imagen para tabletas */
+      width: 80%; /* Limitar el ancho de la imagen */
+  }
+
+  .page-not-found {
+      gap: 1rem; /* Espacio entre elementos */
+  }
+}
+
+/* Estilos para pantallas grandes (escritorio) */
+@media (min-width: 901px) {
+  .page-not-found h2 {
+      font-size: 3rem; /* Tamaño de fuente grande */
+  }
+
+  .error-image {
+      height: calc(100vh - 200px); /* Altura original para pantallas grandes */
+      width: auto; /* Ancho automático */
+  }
+}

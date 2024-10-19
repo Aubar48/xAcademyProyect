@@ -127,19 +127,19 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
   }
 /**Elementos del menu para desktop */
   menuItems=[
-   {text:'Free Landing Pages', route:'/'},
-   {text:'Features', route: '/'},
-   {text:'Services', route:'/'},
-   {text:'Pricing', route:'/'},
-   {text:'Contact', route:'/'}
+   {text:'Free Landing Pages', route:'/home'},
+   {text:'Features', route: '/features'},
+   {text:'Services', route:'/services'},
+   {text:'Pricing', route:'/pricing'},
+   {text:'Contact', route:'/contact'}
   ]
 /**Elementos del menu para movile */
   burgerMenuItems=[
-    {text:'Free Landing Pages', route:'/'},
-    {text:'Features', route: '/'},
-    {text:'Services', route:'/'},
-    {text:'Pricing', route:'/'},
-    {text:'Contact', route:'/'}
+    {text:'Free Landing Pages', route:'/home'},
+    {text:'Features', route: '/features'},
+    {text:'Services', route:'/services'},
+    {text:'Pricing', route:'/pricing'},
+    {text:'Contact', route:'/contact'}
    ]
 
 }

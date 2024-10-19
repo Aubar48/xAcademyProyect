@@ -1,18 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { ThemeService } from '../../services/theme.service';
-import { PresentacionComponent } from './presentacion/presentacion.component';
-import { FeatureComponent } from './feature/feature.component';
+import { Component, OnInit } from '@angular/core'; // Importa los decoradores y la interfaz necesarios desde Angular.
+import { ThemeService } from '../../services/theme.service'; // Importa el servicio para gestionar el tema de la aplicación.
+import { PresentacionComponent } from './presentacion/presentacion.component'; // Importa el componente de presentación.
+import { FeatureComponent } from './feature/feature.component'; // Importa el componente de características.
 
 /**
  * Componente principal de la aplicación.
  * Este componente se encarga de inicializar el modo de tema al iniciar.
  */
 @Component({
-  selector: 'app-main',
-  standalone: true,
-  imports: [PresentacionComponent,FeatureComponent],
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+  selector: 'app-main', // Selector para usar este componente en plantillas.
+  standalone: true, // Indica que este componente es autónomo y no requiere un módulo Angular específico.
+  imports: [PresentacionComponent, FeatureComponent], // Declara los componentes que se utilizarán en este componente.
+  templateUrl: './main.component.html', // Ruta del archivo de plantilla HTML del componente.
+  styleUrls: ['./main.component.scss'] // Ruta del archivo de estilos SCSS del componente.
 })
 export class MainComponent implements OnInit {
 
@@ -27,6 +27,14 @@ export class MainComponent implements OnInit {
    * Inicializa el modo de tema mediante el servicio de tema.
    */
   ngOnInit(): void {
-    this.themeService.initModo();
+    this.initializeTheme(); // Llama a un método separado para inicializar el tema.
+  }
+
+  /**
+   * Método para inicializar el modo de tema.
+   * Se encarga de llamar al servicio de tema para establecer el modo adecuado.
+   */
+  private initializeTheme(): void {
+    this.themeService.initModo(); // Llama al método para inicializar el modo de tema.
   }
 }
