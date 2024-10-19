@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Feature } from '../../../model/feature.model';
+import { FeatureService } from '../../../services/feature/feature.service';
 
 @Component({
   selector: 'app-feature',
@@ -10,21 +11,12 @@ import { Feature } from '../../../model/feature.model';
   styleUrl: './feature.component.scss'
 })
 export class FeatureComponent {
-  features: Feature[] = [
-    {
-      icon: 'add_box',
-      title: 'Easy to Use',
-      description: 'Editing and customizing Essential Landing is easy and fast'
-    },
-    {
-      icon: 'star_half',
-      title: '100% Responsive',
-      description: 'Editing and customizing Essential Landing is easy and fast'
-    },
-    {
-      icon: 'system_update_alt',
-      title: '50+ New pages',
-      description: 'Editing and customizing Essential Landing is easy and fast'
-    }
-  ];
+  features?: Feature[];
+  
+  constructor(private FeatureService: FeatureService) {}
+
+  ngOnInit() {
+    this.features = this.FeatureService.features;
+  }
 }
+
