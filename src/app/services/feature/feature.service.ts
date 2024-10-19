@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Feature } from '../../model/feature.model';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -23,4 +24,26 @@ export class FeatureService {
     }
   ];
   constructor() { }
+  /*getFeatures(): Observable<Feature[]> {
+    return new Observable((observer) => {
+      setTimeout(()=>{
+        observer.next(this.features);  // Aquí es donde emitimos los datos
+      },1000);
+      setTimeout(()=>{
+        observer.next(this.features);  // Aquí es donde emitimos los datos
+      },2000);
+      setTimeout(()=>{
+        observer.next(this.features);  // Aquí es donde emitimos los datos
+        observer.complete();           // Finalizamos la emisión
+      },3000);
+    });
+  }*/
+ getFeatures(): Observable<Feature[]> {
+    return new Observable((observer) => {
+      setTimeout(()=>{
+        observer.next(this.features);  // Aquí es donde emitimos los datos
+        observer.complete();           // Finalizamos la emisión
+      },1000);
+    });
+  }
 }
