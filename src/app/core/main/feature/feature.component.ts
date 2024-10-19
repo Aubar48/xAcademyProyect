@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Feature } from '../../../model/feature.model';
 
 @Component({
   selector: 'app-feature',
@@ -9,7 +10,7 @@ import { Component } from '@angular/core';
   styleUrl: './feature.component.scss'
 })
 export class FeatureComponent {
-  features = [
+  features: Feature[] = [
     {
       icon: 'add_box',
       title: 'Easy to Use',
