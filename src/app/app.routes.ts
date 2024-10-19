@@ -1,11 +1,12 @@
 import { Routes } from '@angular/router'; // Importa la interfaz Routes desde el módulo de enrutamiento de Angular.
+import { NotFoundComponent } from './views/not-found/not-found.component'; // Importa el componente de página no encontrada.
+/*
 import { MainComponent } from './core/main/main.component'; // Importa el componente principal.
-import { NotFoundComponent } from './core/not-found/not-found.component'; // Importa el componente de página no encontrada.
-import { ContactComponent } from './core/contact/contact.component'; // Importa el componente de contacto.
-import { PricingComponent } from './core/pricing/pricing.component'; // Importa el componente de precios.
-import { ServicesComponent } from './core/services/services.component'; // Importa el componente de servicios.
-import { FeaturesComponent } from './core/features/features.component'; // Importa el componente de características.
-
+import { ContactComponent } from './views/contact/contact.component'; // Importa el componente de contacto.
+import { PricingComponent } from './views/pricing/pricing.component'; // Importa el componente de precios.
+import { ServicesComponent } from './views/services/services.component'; // Importa el componente de servicios.
+import { FeaturesComponent } from './views/features/features.component'; // Importa el componente de características.
+*/
 export const routes: Routes = [ // Define las rutas de la aplicación.
     /*
     {
@@ -41,10 +42,10 @@ export const routes: Routes = [ // Define las rutas de la aplicación.
     
     // Define rutas usando la carga de componentes (loadComponent).
     { path: 'home', loadComponent: () => import('./core/main/main.component').then(m => m.MainComponent) }, // Carga el MainComponent para la ruta 'home'.
-    { path: 'contact', loadComponent: () => import('./core/contact/contact.component').then(m => m.ContactComponent) }, // Carga el ContactComponent para la ruta 'contact'.
-    { path: 'pricing', loadComponent: () => import('./core/pricing/pricing.component').then(m => m.PricingComponent) }, // Carga el PricingComponent para la ruta 'pricing'.
-    { path: 'services', loadComponent: () => import('./core/services/services.component').then(m => m.ServicesComponent) }, // Carga el ServicesComponent para la ruta 'services'.
-    { path: 'features', loadComponent: () => import('./core/features/features.component').then(m => m.FeaturesComponent) }, // Carga el FeaturesComponent para la ruta 'features'.
+    { path: 'contact', loadComponent: () => import('./views/contact/contact.component').then(m => m.ContactComponent) }, // Carga el ContactComponent para la ruta 'contact'.
+    { path: 'pricing', loadComponent: () => import('./views/pricing/pricing.component').then(m => m.PricingComponent) }, // Carga el PricingComponent para la ruta 'pricing'.
+    { path: 'services', loadComponent: () => import('./views/services/services.component').then(m => m.ServicesComponent) }, // Carga el ServicesComponent para la ruta 'services'.
+    { path: 'features', loadComponent: () => import('./views/features/features.component').then(m => m.FeaturesComponent) }, // Carga el FeaturesComponent para la ruta 'features'.
     
     { path: '**', component: NotFoundComponent } // Ruta comodín que carga el NotFoundComponent si no hay coincidencias.
 ];
