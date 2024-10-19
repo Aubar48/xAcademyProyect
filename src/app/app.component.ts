@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './core/footer/footer.component';
 import { HeaderComponent } from './core/header/header.component';
 import { MainComponent } from './core/main/main.component';
-import { ThemeService } from './services/theme.service'; // Importa el servicio
+import { ThemeService } from './services/darkMode/theme.service'; // Importa el servicio
 
 @Component({
   selector: 'app-root',

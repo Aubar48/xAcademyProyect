@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, Inject, PLATFORM_ID, OnDestroy } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { ThemeService } from '../../services/theme.service';
+import { ThemeService } from '../../services/darkMode/theme.service';
 import { MenuElementoComponent } from "../header/menu-elemento/menu-elemento.component";
 import { BurgerMenuElementoComponent } from './burger-menu-elemento/burger-menu-elemento.component';
 import { MenuItem } from './../../model/menu-item.model';

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'; // Importa los decoradores y la interfaz necesarios desde Angular.
-import { ThemeService } from '../../services/theme.service'; // Importa el servicio para gestionar el tema de la aplicación.
+import { ThemeService } from '../../services/darkMode/theme.service'; // Importa el servicio para gestionar el tema de la aplicación.
 import { PresentacionComponent } from './presentacion/presentacion.component'; // Importa el componente de presentación.
 import { FeatureComponent } from './feature/feature.component'; // Importa el componente de características.
 

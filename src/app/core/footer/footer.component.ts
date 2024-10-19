@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ThemeService } from '../../services/theme.service';  // Asegúrate de que la ruta es correcta
+import { ThemeService } from '../../services/darkMode/theme.service';  // Asegúrate de que la ruta es correcta
 
 /**
  * Componente de pie de página (footer) de la aplicación.
